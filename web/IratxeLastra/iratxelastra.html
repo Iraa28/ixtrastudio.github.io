@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><h1>IRATXE</a></h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/iratxe.png" alt="">
+            </div>
+            <h1>IRATXE LASTRA</h1>
+            <h2>Diseñadora Gráfica - Grafista</h2>
+            <div class="redes">
+                <a href="https://wa.me/688842773"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/iraa.amb"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.behance.net/iratxelastra"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/iratxe-lastra-romeo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:iratxe.lastra.amb@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p><span>¡Hola!, soy Iratxe Lastra, la persona detrás de ixtrastudio.</span><br> Soy grafista y me mueven las ideas que no se conforman.<br>
+                     Disfruto transformando conceptos en experiencias visuales a través del diseño, el audiovisual y el código.<br>
+                     Me interesa el proceso tanto como el resultado: investigar, probar y encontrar la forma exacta en la que una idea cobra sentido.<br> 
+                     Creo proyectos pensados para destacar, pero sobre todo para funcionar.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre y Apellidos</strong>
+                            Iratxe Lastra Romeo
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+34) 688 84 27 73
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            iratxe.lastra.amb@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.iratxelastra.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Euskadi, España
+                        </li>
+                        <li>
+                            <strong>Especialidad</strong>
+                            <span>DISEÑADORA GRÁFICA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <span>RR.SS.</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-spotify"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>GRAFISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>TECNOLOGÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shirt"></i>
+                            <span>MODA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>COCHES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://drive.google.com/file/d/1a_Gd-kJYkiv_RL3IoE4GYKNItHzfS86C/view?usp=drive_link">Descargar CV<i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Habilidad con Softwares -->
+                <div class="col">
+                    <h3>Softwares</h3>
+                    <div class="habilidad">
+                        <span>Adobe Indesign</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Adobe Illustrator</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Adobe After Effects</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Adobe Premiere Pro</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Paquete Office</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aptitudes -->
+                <div class="col">
+                    <h3>Aptitudes</h3>
+                    <div class="habilidad">
+                        <span>Disposición</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Creatividad</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Constancia</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Capacidad de Organización</span>
+                        <div class="barra-habilidad">
+                            <div class="porcentaje">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM VITAE</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación</h3>
+                    <div class="item izq">
+                        <h4>CERTIFICADO DE PROFESIONALIDAD DE MONTAJE Y POSTPRODUCCIÓN AUDIOVISUAL</h4>
+                        <span class="casa">Salesianos Deusto</span>
+                        <span class="fecha">Enero/Junio 2022</span>
+                        <p>Procesos finales del montaje y la postproducción.</p>
+                        <p>Planificación del montaje y la postproducción.</p>
+                        <p>Preparación del montaje y la postproducción.</p>
+                        <p>Operaciones del montaje y la postproducción.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CICLO SUPERIOR EN ANIMACIONES 3D, JUEGOS Y ENTORNOS INTERACTIVOS</h4>
+                        <span class="casa">CPES Informática y Gestión, Meatze S. L BHIP</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Creación de gráficos para animación 2D y 3D, su implementación en publicidad, videojuegos y efectos especiales, y la programación de aplicaciones multiplataforma.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SISTEMAS Y SERVIDORES WEB</h4>
+                        <span class="casa">CPES Informática y Gestión, Meatze S. L BHIP</span>
+                        <span class="fecha">Julio/Octubre 2020</span>
+                        <p>Un servidor web es un software y un hardware que utiliza el protocolo HTTP (Hypertext Transfer Protocol) y otros protocolos para responder a las peticiones de los clientes realizadas a través de la World Wide Web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>BACHILLERATO EN HUMANIDADES Y CIENCIAS SOCIALES</h4>
+                        <span class="casa">Colegio El Regato Ikastetxea</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>Conocimientos básicos en los ámbitos sociales y humanísticos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>TÉCNICA EN ESTUDIOS TURÍSTICOS</h4>
+                        <span class="casa">Basquetour | Turismoaren Euskal Agentzia</span>
+                        <span class="fecha">2025</span>
+                        <p>Obtención de datos presenciales.</p>
+                        <p>Análisis del perfil y comportamiento del visitante en destino.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>                        
+                    <div class="item der">
+                        <h4>TÉCNICA EN AUDIOVISUALES</h4>
+                        <span class="casa">Inguralde</span>
+                        <span class="fecha">2024</span>
+                        <p>Creación, edición y adaptación de carteles publicitarios y contenidos audiovisuales.</p>
+                        <p>Dinamización de página web interna.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>                    
+                    <div class="item der">
+                        <h4>TÉCNICA EN DESARROLLO DE CONTENIDOS Y SOPORTE INFORMÁTICO</h4>
+                        <span class="casa">Ayto. Bilbao</span>
+                        <span class="fecha">2023</span>
+                        <p>Programación, dinamización y diseño de páginas web y aplicaciones internas.</p>
+                        <p>Creación, gestión y difusión de contenidos audiovisuales.</p>
+                        <p>Elaboración de manuales de procedimientos administrativos.</p>
+                        <p>Gestión administrativa mediante SAP R-3.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>TÉCNICA EN MONTAJE Y EDICIÓN</h4>
+                        <span class="casa">Prime Time Media S.L</span>
+                        <span class="fecha">2022</span>
+                        <p>Edición audiovisual y montaje multicámara.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>TÉCNICA EN DISEÑO GRÁFICO, EDICIÓN AUDIOVISUAL Y MODELADO 3D</h4>
+                        <span class="casa">Shyncrica Producciones</span>
+                        <span class="fecha">2022</span>
+                        <p>Montaje y postproducción de material audiovisual.</p>
+                        <p>Modelado y animación 3D.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>TÉCNICA EN DISEÑO GRÁFICO, MULTIMEDIA Y AUDIOVISUALES</h4>
+                        <span class="casa">La Docena</span>
+                        <span class="fecha">2020</span>
+                        <p>Desarrollo de una aplicación para gestión de tareas y seguimiento de proyectos.</p>
+                        <p>Creación y edición de contenido audiovisual para campañas publicitarias.</p>
+                        <p>Actualización semanal de páginas web (presento.es, wooprugs.com).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <video controls autoplay src="img/promocion.mp4" alt="">
+                    <div class="overlay">
+                        <h3>Video Promocional</h3>
+                        <p>After Effects</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pantone.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Vectorial</h3>
+                        <p>Adobe Illustrator</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/libro.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Gráfico</h3>
+                        <p>Adobe Photoshop</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls autoplay src="img/IntroWhime.mp4" alt="">
+                    <div class="overlay">
+                        <h3>Video Promocional</h3>
+                        <p>Adobe Premiere Pro</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/libro.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Adobe Illustrator</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pantone.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Vectorial</h3>
+                        <p>Adobe Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje    <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Dirección:<br> Euskadi, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamamé:<br> (+34) 688 84 27 73
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email:<br> iratxe.lastra.amb@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://wa.me/688842773"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/iraa.amb"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.behance.net/iratxelastra"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/iratxe-lastra-romeo/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:iratxe.lastra.amb@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
