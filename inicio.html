@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+<!--------------------------------------------------------------------- base --------------------------------------------------------------------->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!--------------------------------------------------------------------- seo --------------------------------------------------------------------->
+      <title>ixtrastudio</title>
+
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="Iratxe Lastra">
+<!--------------------------------------------------------------------- favicon --------------------------------------------------------------------->
+      <link rel="icon" type="image/png" href="images/favicon.png">
+<!--------------------------------------------------------------------- css locales --------------------------------------------------------------------->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/proyectos.css">
+      <link rel="stylesheet" href="css/curriculumvitae.css">
+<!--------------------------------------------------------------------- css externos --------------------------------------------------------------------->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!--------------------------------------------------------------------- js --------------------------------------------------------------------->
+      <script src="js/scroll.js" defer></script>
+   </head>
+   <body class="main-layout">
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <header>
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="inicio.html"><img src="images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-10 offset-md-1">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="inicio.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="curriculumvitae.html">Curriculum</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="proyectos.html">Proyectos</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contacto.html">Contacto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="banner_main">
+         <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="row">
+                           <div class="col-md-7 offset-md-5">
+                              <div class="text-bg">
+                                 <h1> Diseño <br>Gráfico</h1><br>
+                                 <span>Visuales creados para llamar la atención, provocar reacción y destacar</span>
+                                 <a class="read_more" href="curriculumvitae.html">Leer más</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="row">
+                           <div class="col-md-7 offset-md-5">
+                              <div class="text-bg">
+                                 <h1> Montaje <br>y edición</h1><br>
+                                 <span>Cada corte está pensado para captar la atención y potenciar el mensaje</span>
+                                 <a class="read_more" href="curriculumvitae.html">Leer más</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <div class="row">
+                           <div class="col-md-7 offset-md-5">
+                              <div class="text-bg">
+                                 <h1> Programación <br>Web</h1><br>
+                                 <span>Estructuras sólidas para experiencias rápidas y funcionales</span>
+                                 <a class="read_more" href="curriculumvitae.html">Leer más</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Siguiente</span>
+            </a>
+         </div>
+      </section>
+      <br>
+      <div id="sobremi" class="sobremi">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="titlepage"><br>
+                     <h2>Sobre <span class="green">mí</span></h2><br>
+                     <p>¡Hola!, soy Iratxe Lastra, la persona detrás de ixtrastudio.</p>
+                     <p>Soy grafista y me mueven las ideas que no se conforman.</p>
+                     <p>Disfruto transformando conceptos en experiencias visuales a través del diseño, el audiovisual y el código.</p>
+                     <p>Me interesa el proceso tanto como el resultado: investigar, probar y encontrar la forma exacta en la que una idea cobra sentido.</p> 
+                     <p>Creo proyectos pensados para destacar, pero sobre todo para funcionar.</p>
+                     <a class="read_more" href="curriculumvitae.html"> Leer más</a>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_img">
+                     <figure><img src="images/about.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="servicios" class="servicios">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <br><h2>Habilidades <span class="green">digitales</span></h2><br>
+                  </div>
+               </div>
+            </div>
+            <div class="row software-grid">
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-computer"></i>
+                  <p>Adobe CC</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <p>Corel Draw</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-code"></i>
+                  <p>Visual Studio</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-brands fa-wordpress"></i>
+                  <p>WordPress</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-brands fa-figma"></i>
+                  <p>Figma</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-file-word"></i>
+                  <p>Office</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-cube"></i>
+                  <p>Maya</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-brands fa-unity"></i>
+                  <p>Unity</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-database"></i>
+                  <p>SAP R-3</p>
+               </div>
+               <div class="col-md-3 col-sm-6 col-6 software-card">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                  <p>MailChimp</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="proyectos"  class="proyectos">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Proyectos <span class="green">realizados</span></h2><br>
+                     <p>Un pequeño recorrido por algunos de mis proyectos</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_text">
+                     <div class="galleryh3">
+                        <h3>Diseño Gráfico</h3>
+                        <p>Cada elemento visual cumple <br>
+                            una función dentro <br>
+                            del mensaje final.                          
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/pantone.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="images/libro.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img video-card">
+                     <img src="images/impacto.jpg" alt="Video">                       
+                        <div class="play-btn">▶</div>                     
+                     <video src="images/promocion.mp4"></video>                     
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img video-card">
+                     <img src="images/volar.jpg" alt="Video">                       
+                        <div class="play-btn">▶</div>                     
+                     <video src="images/volar.MP4"></video>                     
+                  </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_text">
+                     <div class="galleryh3">
+                        <h3>Montaje y edición</h3>
+                        <p> Imágenes que cobran <br>     
+                           vida a través del <br>
+                           montaje y la edición.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_text">
+                     <div class="galleryh3">
+                        <h3>Programación Web</h3>
+                        <p>Código limpio y estructurado <br>      
+                           para una experiencia web fluida.                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <a href="web/OposicionesEiTB/oposicioneseitb2023.html" class="gallery_link" target="_blank">
+                     <figure><img src="images/eitb.jpg" alt=""/></figure></a> 
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <a href="web/4taedicion/InicioGeneral.html" class="gallery_link" target="_blank">
+                     <figure><img src="images/aytaBilbao.jpg" alt=""/></figure></a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="design">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div id="design" class="carousel slide banner_design" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#design" data-slide-to="0" class="active"></li>
+                        <li data-target="#design" data-slide-to="1"></li>
+                        <li data-target="#design" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="text_de">
+                                          <div class="titlepage">
+                                             <h2>Diseño web y <span class="green">creatividad digital</span></h2>
+                                          </div>
+                                          <p>Ayudo a marcas y proyectos a construir una presencia digital sólida mediante diseño web, identidad visual y soluciones creativas adaptadas a cada necesidad.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="text_de">
+                                          <div class="titlepage">
+                                             <h2>Del concepto a la <span class="green">experiencia</span></h2>
+                                          </div>
+                                          <p>Analizo, estructuro y construyo cada proyecto paso a paso, cuidando el proceso para que la idea final tenga sentido y coherencia en cada detalle.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="text_de">
+                                          <div class="titlepage">
+                                             <h2>Ideas <span class="green">que conectan</span></h2>
+                                          </div>
+                                          <p>Cada proyecto busca generar impacto real: comunicar con claridad, conectar con las personas y dejar una impresión que marque.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#design" role="button" data-slide="prev">
+                     <i class="fa fa-angle-left" aria-hidden="true"></i>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#design" role="button" data-slide="next">
+                     <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-7 pad_roght0">
+                  <div class="design_img">
+                     <figure><img src="images/ixtraimage.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div  class="latest_news">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Proyectos <span class="green">recientes</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 offset-md-2">
+                  <div id="new" class="news_box">
+                     <div class="news_img">
+                        <figure><img src="images/postI.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="news_room">
+                        <span>Categoria: Diseño Gráfico</span>
+                        <h3>Versiones de logos</h3>
+                        <p>Un recorrido por las diferentes versiones y enfoques de mi logo personal</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 ">
+                  <div id="new" class="news_box">
+                     <div class="news_img mr_le">
+                        <figure><img src="images/postII.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="news_room">
+                        <span>Categoria: Programación Web</span>
+                        <h3>Mi página web</h3>
+                        <p>Captura del desarrollo de mi web personal, enfocada en maquetación y estilo visual</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="proyectos.html"> Leer más</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="reseñas" class="reseñas">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-8 pad_left0">
+                  <div id="testimon" class="carousel slide banner_testimonial" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#testimon" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimon" data-slide-to="1"></li>
+                        <li data-target="#testimon" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                          
+                                          <span>Qué me motivó</span>
+                                          <p>Empecé por curiosidad y por las ganas de crear cosas desde cero. Me atrajo la idea de transformar ideas en algo real y funcional.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                          
+                                          <span>Por qué empecé</span>
+                                          <p>Descubrí este mundo probando, equivocándome y aprendiendo. Cada pequeño avance me motivó a seguir mejorando y explorando más.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                          
+                                          <span>Qué me mueve</span>
+                                          <p>Me motivan los retos, aprender cosas nuevas y ver cómo cada proyecto va tomando forma poco a poco.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                          
+                                          <span>Hacia dónde voy</span>
+                                          <p>Quiero seguir creciendo, mejorando mis habilidades y desarrollando proyectos que reflejen quién soy y cómo trabajo.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption relative">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                          
+                                          <span>Por qué me gusta</span>
+                                          <p>Porque me permite crear, experimentar y aprender constantemente. Cada proyecto es una nueva oportunidad para mejorar.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="text_humai">
+                                         
+                                          <span>Qué busco</span>
+                                          <p>Seguir aprendiendo, enfrentar nuevos retos y desarrollar ideas que tengan sentido y personalidad.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#testimon" role="button" data-slide="prev">
+                     <i class="fa fa-angle-left" aria-hidden="true"></i>
+                     <span class="sr-only">Anterior</span>
+                     </a>
+                     <a class="carousel-control-next" href="#testimon" role="button" data-slide="next">
+                     <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     <span class="sr-only">Siguiente</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-4 ">
+                  <div class="titlepage">
+                     <h2>Mi enfoque</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="contacto" class="contacto">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <br><h2>Da el primer paso <span class="green">y contáctame</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form" action="https://formspree.io/f/mykkkeyq" method="POST">                     
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactaconmigo" placeholder="Nombre" type="text" name="Nombre" required> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactaconmigo" placeholder="Correo electrónico" type="email" name="Correo electrónico" required> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactaconmigo" placeholder="Numero teléfono" type="tel" name="Numero teléfono">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="contactaconmigo textarea" placeholder="Mensaje" name="Mensaje" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button type="submit" class="send_btn">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>               
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46486.6107996109!2d-2.977012027978764!3d43.26371913018517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4e27664b89b9%3A0x6534acc41e95a645!2sBilbao%2C%20Vizcaya!5e0!3m2!1ses!2ses!4v1768422402417!5m2!1ses!2ses" width="600" height="345" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+      <div class="footer">
+         <a href="#" class="footer-scroll-top" id="scrollTop" aria-label="Volver arriba">
+            <i class="fa fa-angle-up"></i>
+         </a>
+
+         <div class="container text-center">
+            <ul class="social_icon minimalist">
+            <li>
+               <a href="https://wa.me/688842773" target="_blank" aria-label="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/iraa.amb" target="_blank" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.behance.net/iratxelastra" target="_blank" aria-label="Behance">
+                  <i class="fa-brands fa-behance"></i>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/iratxe-lastra-romeo/" target="_blank" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+               </a>
+            </li>
+            <li>
+               <a href="mailto:iratxe.lastra.amb@gmail.com" aria-label="Email">
+                  <i class="fa-regular fa-envelope"></i>
+               </a>
+            </li>
+            </ul>
+            <p class="copyright-text">© 2026 · Todos los derechos reservados. Diseñado y programado por Iratxe Lastra</p>
+         </div>
+      </div>
+      </footer>      
+      <div id="videoModal" class="video-modal">
+         <div class="video-modal-content">
+            <span class="close-video">&times;</span>
+
+            <video id="modalVideo" controls muted autoplay></video>
+         </div>
+      </div>
+<!--------------------------------------------------------------------- js --------------------------------------------------------------------->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+      <script src="js/videos.js"></script>
+      <script src="js/custom.js"></script>
+      
+   </body>
+</html>
